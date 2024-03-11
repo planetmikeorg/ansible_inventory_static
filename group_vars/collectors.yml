@@ -1,0 +1,19 @@
+collectors:
+  vars:
+    vault_user_password: SomethingAw3som_here
+    baseline_selinux_state: permissive
+    baseline_firewall_allow_services:
+      - http
+      - https
+    nodes_linux:
+      - app01.corp.example.com
+      - odb01.corp.example.com
+      - web01.corp.example.com
+      - build01.corp.example.com
+    
+    nodes_windows:
+      - dc01.corp.example.com
+      - dc02.corp.example.com
+      - fp01.corp.example.com
+      - wadm01.corp.example.com
+      - winbuilder.base.example.com

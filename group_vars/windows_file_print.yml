@@ -1,0 +1,6 @@
+win_features:
+  - FS-FileServer
+  - FS-Data-Deduplication
+  - FS-DFS-Namespace
+  - FS-DFS-Replication
+  - FS-VSS-Agent

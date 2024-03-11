@@ -1,0 +1,14 @@
+ansible_host: 10.10.10.23
+manage_lvm: true
+lvm_groups:
+  - vgname: vg_apps
+    disks:
+      - /dev/sda
+    create: true
+    lvnames:
+      - lvname: lv_u01
+        size: 40g
+        create: true
+        filesystem: xfs
+        mount: true
+        mntp: /u01

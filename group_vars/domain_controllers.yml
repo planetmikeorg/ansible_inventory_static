@@ -1,0 +1,21 @@
+ous:
+  - name: "Admins"
+  - name: "Roles"
+  - name: "Resources"
+  - name: "Services"
+  - name: "Machines"
+ad_groups:
+  - name: "AppAdmin"
+  - name: "Executive"
+  - name: "AppDev"
+  - name: "Services"
+  - name: "GeneralOps"
+service_accounts:
+  - name: "{{ service_join_domain }}"
+    ou: "{{ service_accounts_ou }}"
+    description: "joining domain controllers"
+    password:  "{{ svcjoindc_pw }}"
+  - name: "{{ service_ou_admin }}"
+    ou: "{{ service_accounts_ou }}"
+    description: "OU administration"
+    password: "{{ svcouadmin_pw }}"

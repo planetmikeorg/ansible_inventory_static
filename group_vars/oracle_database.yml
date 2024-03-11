@@ -1,0 +1,6 @@
+baseline_install_packages:
+  - gdm
+  - gnome-shell
+  - oracle-database-preinstall-21c
+baseline_firewall_allow_ports:
+  - 1521/tcp

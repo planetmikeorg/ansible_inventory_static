@@ -1,0 +1,4 @@
+ansible_host: 10.1.10.2
+podman_user: svcrunner
+podman_user_id: 1002
+services_fqdn: collector.corp.example.com

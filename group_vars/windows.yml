@@ -1,0 +1,6 @@
+ansible_user: Administrator
+ansible_password: "{{ ansible_win_admin }}"
+  # Use Ansible Vault in production
+ansible_connection: winrm
+ansible_winrm_server_cert_validation: ignore
+ansible_winrm_transport: basic # or kerberos, ntlm, etc.  

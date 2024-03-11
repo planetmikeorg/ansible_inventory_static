@@ -1,0 +1,8 @@
+baseline_install_packages:
+  - "oracle-epel-release-el{{ ansible_distribution_major_version }}"
+  - "oraclelinux-developer-release-el{{ ansible_distribution_major_version }}" 
+  - "@Container Management"
+  - "@Headless Management"
+  - "@Fonts"    
+  - gdm
+  - gnome-shell

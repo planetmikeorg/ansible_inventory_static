@@ -1,0 +1,6 @@
+baseline_install_packages:
+  - httpd
+  - mod_ssl
+baseline_firewall_allow_services:
+  - http
+  - https

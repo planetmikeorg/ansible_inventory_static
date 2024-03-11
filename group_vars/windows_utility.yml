@@ -1,0 +1,12 @@
+win_build_ws_iso: http://10.1.10.240/ws22e.iso
+win_features:
+  - FS-FileServer
+  - RSAT-AD-Tools
+  - RSAT-AD-PowerShell
+  - RSAT-AD-AdminCenter
+  - RSAT-DNS-Server
+  - RSAT-File-Services
+  - RSAT-FSRM-Mgmt
+  - RSAT-ADCS
+  - Web-Scripting-Tools
+  - Web-Mgmt-Console

@@ -1,0 +1,16 @@
+root_dc: "DC=corp,DC=example,DC=com"
+base_ou: "OU=Corp,DC=corp,DC=example,DC=com" # Define the root OU here
+service_accounts_ou: "OU=Services,{{ base_ou }}" # Define the Service Accounts OU here
+groups_ou: "OU=Roles,{{ base_ou }}"
+machine_ou: "OU=Machines,{{ base_ou }}" # Define computer/machine OU here
+service_join_domain: svcjoindc
+service_ou_admin: svcouadmin
+domain_name: corp.example.com
+domain_admin_user: "CORP\\Administrator"
+domain_admin_password: "{{ ansible_win_admin }}"
+dns_delegation: no
+force: yes
+domain_dns_servers:
+  - 10.10.10.11
+  - 10.10.10.12
+reverse_zone: "10.10.10"

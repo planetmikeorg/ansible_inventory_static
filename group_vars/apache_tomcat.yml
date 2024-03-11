@@ -1,0 +1,5 @@
+baseline_install_packages:
+  - java-11-openjdk-headless
+  - prometheus-jmx-exporter-openjdk11
+baseline_firewall_allow_ports:
+  - 8080/tcp        

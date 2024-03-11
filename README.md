@@ -1,0 +1,2 @@
+This repository serves as an example of an Ansible inventory in a static YAML format. It demonstrates how to structure and organize your inventory file to define hosts, groups, and variables for Ansible playbooks. The inventory file follows the YAML syntax, making it easy to read and maintain. Feel free to explore the files and directories in this repository to understand how to create your own Ansible inventory using YAML.
+

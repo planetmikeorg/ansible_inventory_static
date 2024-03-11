@@ -1,0 +1,42 @@
+ansible_host: 10.10.10.21
+lvm_groups:
+  - vgname: vg_apps
+    disks:
+      - /dev/sda
+    create: true
+    lvnames:
+      - lvname: lv_u01
+        size: 40g
+        create: true
+        filesystem: xfs
+        mount: true
+        mntp: /u01
+      - lvname: lv_u02
+        size: 50g
+        create: true
+        filesystem: xfs
+        mount: true
+        mntp: /u02
+      - lvname: lv_u03
+        size: 50g
+        create: true
+        filesystem: xfs
+        mount: true
+        mntp: /u03
+  - vgname: vg_logs
+    disks:
+      - /dev/sdb
+    create: true
+    lvnames:              
+      - lvname: lv_u04
+        size: 20g
+        create: true
+        filesystem: xfs
+        mount: true
+        mntp: /u04
+      - lvname: lv_u05
+        size: 20g
+        create: true
+        filesystem: xfs
+        mount: true
+        mntp: /u05

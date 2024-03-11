@@ -1,0 +1,51 @@
+domain_controllers:
+  children:
+    initial:
+      hosts:
+        dc01.corp.example.com:
+          ansible_host: 10.10.10.10
+    replicas:
+      hosts:
+        dc02.corp.example.com:
+          ansible_host: 10.10.10.11
+
+windows_utility:
+  hosts:
+    wadm01.corp.example.com:
+      ansible_host: 10.10.10.13
+
+windows_file_print:
+  hosts:        
+    fs01.corp.example.com:
+      ansible_host: 10.10.10.12
+
+apache_tomcat:
+  hosts:
+    app01.corp.example.com:
+
+apache_httpd:
+ hosts:
+    web01.corp.example.com:
+
+oracle_development:
+  hosts:
+    build01.corp.example.com:
+
+oracle_database:
+  hosts:
+    odb01.corp.example.com:
+
+### Top Level Group
+windows:
+  children:
+    windows_utility:
+    windows_file_print:
+    domain_controllers:  
+
+linux:
+  children:
+    apache_httpd:
+    apache_tomcat:
+    collectors:
+    oracle_database:
+    oracle_development:
